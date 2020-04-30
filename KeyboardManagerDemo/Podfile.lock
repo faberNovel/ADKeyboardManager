@@ -1,0 +1,37 @@
+PODS:
+  - ADKeyboardManager (4.0.3)
+  - ADUtils (9.2.0):
+    - ADUtils/objc (= 9.2.0)
+  - ADUtils/objc (9.2.0):
+    - ADUtils/Swift
+  - ADUtils/Swift (9.2.0)
+  - CocoaLumberjack (3.5.3):
+    - CocoaLumberjack/Core (= 3.5.3)
+  - CocoaLumberjack/Core (3.5.3)
+  - SwiftLint (0.39.2)
+
+DEPENDENCIES:
+  - ADKeyboardManager (from `../`)
+  - ADUtils (~> 9.2)
+  - CocoaLumberjack (~> 3.5)
+  - SwiftLint (~> 0.38)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - ADUtils
+    - CocoaLumberjack
+    - SwiftLint
+
+EXTERNAL SOURCES:
+  ADKeyboardManager:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ADKeyboardManager: 42c0e609227f361f36e2b7fac70de957b649e6b2
+  ADUtils: fc3a8ee8fb915e03b90c2bc623ae7ead86354fc2
+  CocoaLumberjack: 2f44e60eb91c176d471fdba43b9e3eae6a721947
+  SwiftLint: 22ccbbe3b8008684be5955693bab135e0ed6a447
+
+PODFILE CHECKSUM: b645baffc1e62306da8ac9d4911514a2e5467239
+
+COCOAPODS: 1.8.3

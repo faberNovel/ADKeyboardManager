@@ -1,0 +1,3 @@
+import_from_git(url: 'ssh://git@codereview.technologies.fabernovel.com:29418/ADFastlane',
+               path: 'ios/fastlane/Fastfile',
+               branch: 'v5.0+')

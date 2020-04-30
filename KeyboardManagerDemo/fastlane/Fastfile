@@ -1,0 +1,33 @@
+#####################################################
+# Public
+#####################################################
+
+desc "Run all unit tests"
+lane :tests do
+  unit_tests
+end
+
+desc "Linting"
+lane :lint do
+  swiftlint(
+    mode: :lint,
+    config_file: ".swiftlint.yml",
+    strict: true,
+    executable: "Pods/SwiftLint/swiftlint"
+  )
+end
+
+#####################################################
+# Private
+#####################################################
+
+desc "Runs all unit tests"
+private_lane :unit_tests do
+  scan(
+    workspace: "KeyboardManagerDemo.xcworkspace",
+    configuration: "Stubs",
+    scheme: "KeyboardManagerDemo",
+    clean: true,
+    devices: ["iPhone 8"]
+  )
+end
