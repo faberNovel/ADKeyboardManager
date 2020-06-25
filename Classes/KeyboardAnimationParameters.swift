@@ -25,7 +25,7 @@ import Foundation
         }
         // `animationCurve` cannot be cast into UIView.AnimationCurve because for 'some'
         // combinations of devices/os, the keyboard animation has a rawValue of 7 while
-        // UIView.AnimationCurve only defines enum values up to 3.
+        // UIView.AnimationCurve only defines enumeration values up to 3.
         // This is an old and well-known issue, as stated here for example :
         // https://stackoverflow.com/q/19482573
         // One possible solution consists in turning .AnimationCurve into .AnimationOptions
