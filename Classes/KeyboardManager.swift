@@ -128,13 +128,16 @@ public class KeyboardManager: NSObject {
             return
         }
         UIView.animate(
-            duration: parameters.animationDuration,
-            curve: parameters.animationCurve
-        ) { [weak self] in
-            guard let self = self else { return }
-            self.scrollView.contentInset = newContentInset
-            self.scrollView.scrollIndicatorInsets = newScrollIndicatorInsets
-            completion()
-        }
+            withDuration: parameters.animationDuration,
+            delay: 0.0,
+            options: parameters.animationOptions,
+            animations: { [weak self] in
+                guard let self = self else { return }
+                self.scrollView.contentInset = newContentInset
+                self.scrollView.scrollIndicatorInsets = newScrollIndicatorInsets
+                completion()
+            },
+            completion: nil
+        )
     }
 }
