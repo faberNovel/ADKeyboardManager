@@ -11,5 +11,5 @@ Pod::Spec.new do |spec|
   spec.source_files  = 'Classes/*.swift'
   spec.framework     = 'Foundation', 'UIKit'
   spec.requires_arc  = true
-  spec.swift_version = '4.2'
+  spec.swift_version = '5.0'
 end
