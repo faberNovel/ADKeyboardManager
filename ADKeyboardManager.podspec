@@ -6,7 +6,7 @@ Pod::Spec.new do |spec|
   spec.homepage      = 'http://applidium.com'
   spec.summary       = 'Applidium\'s keyboard manager for ScrollViews'
   spec.platform      = 'ios', '10.0'
-  spec.license       = { :type => 'Commercial', :text => 'Created and licensed by Applidium. Copyright 2016 Applidium. All rights reserved.' }
+  spec.license       = { :type => 'MIT', :file => 'LICENSE' }
   spec.source        = { :git => 'https://github.com/faberNovel/ADKeyboardManager.git', :tag => "v#{spec.version}" }
   spec.source_files  = 'Classes/*.swift'
   spec.framework     = 'Foundation', 'UIKit'
