@@ -11,7 +11,7 @@ import Foundation
  `KeyboardManagerDelegate` enables to receive callbacks to perform supplementary changes inside the animation block.
  */
 @objc(ADKeyboardManagerDelegate)
-public protocol KeyboardManagerDelegate: AnyObject {
+@MainActor public protocol KeyboardManagerDelegate: AnyObject {
     func keyboardManager(_ animator: KeyboardManager,
                          performAdditionalAnimationOnKeyboardWillShow parameters: KeyboardAnimationParameters)
     func keyboardManager(_ animator: KeyboardManager,
@@ -29,7 +29,7 @@ public protocol KeyboardManagerDelegate: AnyObject {
  to `KeyboardManagerDelegate` in order to receive a callback at the appropriate time.
  */
 @objc(ADKeyboardManager)
-public class KeyboardManager: NSObject {
+@MainActor public class KeyboardManager: NSObject {
     public weak var delegate: KeyboardManagerDelegate?
     private let scrollView: UIScrollView
     private var initialBottomInset: CGFloat = 0
