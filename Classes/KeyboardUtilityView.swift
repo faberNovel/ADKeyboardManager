@@ -5,7 +5,7 @@
 //  Created by Edouard Siegel on 25/04/2019.
 //
 
-import Foundation
+import UIKit
 
 protocol KeyboardUtilityView: AnyObject {
     func firstResponderView() -> UIView?
