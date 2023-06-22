@@ -9,6 +9,7 @@ All notable changes to this project will be documented in this file.
 ### Updated
 
 ### Removed
+- Drop support for iOS version below iOS 12.0
 
 ### Fixed
 
