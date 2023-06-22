@@ -1,7 +1,11 @@
 source 'https://rubygems.org'
+ruby '3.0.6'
 
-ruby '2.7.2'
+gem 'cocoapods', '1.12.1'
+gem 'CFPropertyList', '3.0.6'
+gem 'fastlane', '<3.0'
+gem 'danger'
+gem 'danger-swiftlint'
 
-gem 'cocoapods', '1.8.3'
-gem 'CFPropertyList', '3.0.0'
-gem 'adfastlane', '1.0.3'
+plugins_path = File.join(File.dirname(__FILE__), 'fastlane', 'Pluginfile')
+eval_gemfile(plugins_path) if File.exist?(plugins_path)
