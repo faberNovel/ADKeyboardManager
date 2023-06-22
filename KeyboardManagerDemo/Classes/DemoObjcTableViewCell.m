@@ -18,7 +18,7 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self != nil) {
         self.textField = [[UITextField alloc] initWithFrame:CGRectZero];
-        [self addSubview:self.textField];
+        [self.contentView addSubview:self.textField];
         [self.textField ad_pinToSuperviewWithInsets:UIEdgeInsetsMake(8, 16, 8, 16)];
         self.textField.delegate = self;
     }
