@@ -1,18 +1,18 @@
-source 'https://github.com/CocoaPods/Specs.git'
+source 'https://cdn.cocoapods.org/'
 
-platform :ios, '10.0'
+platform :ios, '13.0'
 use_frameworks!
 
 target 'KeyboardManagerDemo' do
   pod 'CocoaLumberjack', '~> 3.5'
-  pod 'ADUtils', '~>9.2'
+  pod 'ADUtils', '~>11.3'
   pod 'ADKeyboardManager', :path => '../'
   pod 'SwiftLint', '~> 0.38'
 end
 
 target 'KeyboardManagerDemoTests' do
   pod 'CocoaLumberjack', '~> 3.5'
-  pod 'ADUtils', '~>9.2'
+  pod 'ADUtils', '~>11.3'
   pod 'ADKeyboardManager', :path => '../'
   pod 'SwiftLint', '~> 0.38'
 end

@@ -25,7 +25,7 @@ class DemoTableViewCell: UITableViewCell, UITextFieldDelegate {
     // MARK: - Private
 
     private func commonInit() {
-        addSubview(textField)
+        contentView.addSubview(textField)
         textField.ad_pinToSuperview(insets: UIEdgeInsets(value: 16))
         textField.delegate = self
     }
