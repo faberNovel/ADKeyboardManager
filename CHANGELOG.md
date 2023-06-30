@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 
 ### Added
+- Add support for Swift Package Manager
 
 ### Updated
 - Add `@MainActor` to `KeyboardManagerDelegate` protocol and `KeyboardManager` class

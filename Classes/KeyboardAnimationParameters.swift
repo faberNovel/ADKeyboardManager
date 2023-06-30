@@ -5,7 +5,7 @@
 //  Created by Denis Poifol on 30/04/2020.
 //
 
-import Foundation
+import UIKit
 
 @objc public class KeyboardAnimationParameters: NSObject {
     public let animationOptions: UIView.AnimationOptions
