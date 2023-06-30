@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 ### Added
 
 ### Updated
+- Add `@MainActor` to `KeyboardManagerDelegate` protocol and `KeyboardManager` class
 
 ### Removed
 - Drop support for iOS version below iOS 12.0
