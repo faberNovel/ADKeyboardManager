@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name          = 'ADKeyboardManager'
-  spec.version       = '6.0.0'
+  spec.version       = '7.0.0'
   spec.authors       = 'Applidium'
   spec.license       = 'none'
   spec.homepage      = 'http://applidium.com'
@@ -11,5 +11,5 @@ Pod::Spec.new do |spec|
   spec.source_files  = 'Classes/*.swift'
   spec.framework     = 'Foundation', 'UIKit'
   spec.requires_arc  = true
-  spec.swift_version = '5.0'
+  spec.swift_version = '5.6'
 end

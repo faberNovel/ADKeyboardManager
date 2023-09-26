@@ -80,7 +80,8 @@ def update_changelog(target_version)
   changelog_path = ENV["CHANGELOG"]
   stamp_changelog(
     changelog_path: changelog_path,
-    section_identifier: "#{target_version}"
+    section_identifier: "#{target_version}",
+    stamp_datetime_format: '%F'
   )
 
   git_add(path: changelog_path)
@@ -99,7 +100,7 @@ def bump_podspec(target_version)
 
   pod_install # update the Podfile.lock with the new version
 
-  path = [podspec_path, "Podfile.lock"]
+  path = [podspec_path, "KeyboardManagerDemo/Podfile.lock"]
   git_add(path: path)
   git_commit(
     path: path,
@@ -112,7 +113,7 @@ def target_version_from_branch
 end
 
 def pod_install
-  sh "pushd KeyboardManagerDemo"
-  sh "bundle exec pod install"
-  sh "popd"
+  Dir.chdir "../KeyboardManagerDemo" do
+    sh "bundle exec pod install"
+  end
 end
