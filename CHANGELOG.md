@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [7.0.0] - 2023-09-26
+
 ### Added
 - Add support for Swift Package Manager
 
