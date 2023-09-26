@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [7.0.0] - 2023-09-26
+
 ### Added
 - Add support for Swift Package Manager
 
@@ -12,6 +14,7 @@ All notable changes to this project will be documented in this file.
 
 ### Removed
 - Drop support for iOS version below iOS 12.0
+- Drop support for Swift version below 5.6
 
 ### Fixed
 
